@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Form</title> 
+       <meta charset="UTF-8"/>
+       <link rel="stylesheet" href="Formulaire.css">
+       <link rel="icon" type="image" href="images.jpg">
+    </head>
+    <body>
+        <img src="image.png">
+        <form name="Form1" action="destination.html" method="GET" autocomplete="on"> 
+            <!-- autocomplete active l' autocompletion des champs, et get renvoie les données dans l'URL -->
+            <fieldset id="main">
+                <legend>Informations Personnelles</legend>
+               <div> <!-- creer un cadre autour des éléments du formulaire -->
+    
+                <label for="nom">Nom </label>
+                <input type="text" id="nom"><br>
+                <label for="prenom">Prénom </label>
+                <input type="text" id="prenom"><br>
+                <label for=""DateNaissance>Date De Naissance </label>
+                <input type="date" id="DateNaissance"></div>
+                
+                <fieldset id="naissance">
+                    <legend>Lieu De Naissance</legend>
+                    <input type="radio" name="lieu" id="lieu1">
+                    <label>Rabat</label><br>
+                    <input type="radio" name="lieu" id="lieu2">
+                    <label>Casablanca</label><br>
+                    <input type="radio" name="lieu" id="lieu3">
+                    <label>Marrakesh</label><br>
+                    <input type="radio" name="lieu" id="lieu4">
+                    <label>Tanger</label>
+                </fieldset>
+                <div>
+                    
+               
+                <label for="Adresse">Adresse Postale</label>
+                <textarea id="Adresse" rows="2" cols="30" placeholder="Votre adresse ici.">
+                </textarea><br>
+                <label for="CodePostal"> Code Postal</label>
+                <input type="number" id="CodePostal"><br>
+                <label for="adresseElec">Adresse Eléctronique </label>
+                <input type="email" id="adresseElec"><br>
+                <label for="page">Page Personnelle </label>
+                <input type="url" id="Page"><br>
+                <label for="tel">Téléphone Portable </label>
+                <input type="text" id="tel"><br>
+                <label for="semestre">Semestre </label>
+                <select id="semestre">
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                    <option value="S4">S4</option>
+                </select><br>
+                <label for="niv">Niveau </label>
+                <input type="range" min="0" max="10" step="1" id=""niv><br> 
+                </div>
+                <fieldset id="Connaissances">
+                    <legend>Connaissances</legend>
+                    <input type="checkbox" name="con" id="x">
+                    <label for="x">Languages De Programmation</label>
+                    <input type="checkbox" name="con" id="y">
+                    <label for="y">Data preprocessing</label>
+                    <input type="checkbox" name="con" id="z">
+                    <label for="z">Machine Learning</label>
+                </fieldset>
+                <input type="button" value="Envoyer" id="envoyer">
+
+            </fieldset>
+        </form>
+
+
+    </body>
+</html>
